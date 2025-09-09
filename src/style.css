@@ -1,0 +1,55 @@
+/* import Boldonse (Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100svh;
+  width: 100dvw;
+  color: #ff3b3b;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Boldonse", system-ui;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #6a6a6a;
+  cursor: default;
+  z-index: 10;
+  mix-blend-mode: multiply;
+}
+
+.image-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.image-container img {
+  position: absolute;
+  height: 360px;
+  width: auto;
+  display: none;
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+}
